@@ -110,13 +110,13 @@
 
 .signup-form__item--email {
   &::before {
-    background-image: url("../../img/icon-mail.svg");
+    background-image: url("../img/icon-mail.svg");
   }
 }
 
 .signup-form__item--password {
   &::before {
-    background-image: url("../../img/icon-key.svg");
+    background-image: url("../img/icon-key.svg");
   }
 }
 
