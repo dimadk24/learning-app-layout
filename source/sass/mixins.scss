@@ -1,0 +1,49 @@
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin container($width: 320px) {
+  width: $width;
+  margin: 0 auto;
+  background-color: $white;
+}
+
+@mixin horizontal-paddings($padding: 20px) {
+  padding-left: $padding;
+  padding-right: $padding;
+}
+
+@mixin vertical-paddings($padding: 40px) {
+  padding-top: $padding;
+  padding-bottom: $padding;
+}
+
+@mixin container-adaptive() {
+  @media (min-width: $mobile-width) {
+    @include container($mobile-width);
+  }
+
+  @media (min-width: $tablet-width) {
+    @include container($tablet-width);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container($desktop-width);
+  }
+}
+
+@mixin container-adaptive-small() {
+  @media (min-width: $mobile-width) {
+    @include container($mobile-width);
+  }
+
+  @media (min-width: $tablet-width) {
+    @include container($tablet-width);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container($tablet-width);
+  }
+}

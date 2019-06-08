@@ -1,0 +1,20 @@
+.page-header {
+  @include horizontal-paddings(10px);
+  @include vertical-paddings(10px);
+  width: 100%;
+  background-color: $accent-color;
+  box-shadow: 0 0 10px $transparent-dark;
+}
+
+.page-header__title {
+  text-decoration: none;
+  color: $white;
+  font-size: 1.1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.page-header__icon {
+  margin: 0 0.5em;
+}

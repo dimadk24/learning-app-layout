@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dashboard: sign-up page</title>
+
+  <link href="css/style.min.css" type="text/css" rel="stylesheet" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <header class="page-header">
+    <h1 class="page-header__title">
+      <span class="page-header__icon">📚</span>
+      Learning app
+    </h1>
+
+    <!-- dashboard link here -->
+    <!-- student name block here -->
+  </header>
+
+  <main class="page-main">
+    <div class="form-wrapper">
+      <form class="signup-form form" action="#" method="POST">
+        <h2 class="signup-form__title">Sign up with your email</h2>
+
+        <p class="signup-form__item signup-form__item--email">
+          <label for="email">Email</label>
+          <input class="signup-form__input" type="email" name="email" id="email">
+        </p>
+
+        <div role="group" class="signup-form__columns">
+          <p class="signup-form__item signup-form__item--password">
+            <label for="password">Password</label>
+            <input class="signup-form__input" type="password" name="password" id="password">
+          </p>
+
+          <p class="signup-form__item signup-form__item--password">
+            <label for="password-rep">Repeat password</label>
+            <input class="signup-form__input" type="password" name="password-rep" id="password-rep">
+          </p>
+        </div>
+
+        <div role="group" class="signup-form__columns">
+          <p class="signup-form__item">
+            <label for="name">Name</label>
+            <input class="signup-form__input" type="text" name="name" id="name">
+          </p>
+
+          <p class="signup-form__item">
+            <label for="surname">Surname</label>
+            <input class="signup-form__input" type="text" name="surname" id="surname">
+          </p>
+
+          <p class="signup-form__item signup-form__item--group">
+            <label for="group">Group number</label>
+            <select class="signup-form__group-select" name="group" id="group">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </p>
+        </div>
+
+        <button class="signup-form__button button" type="submit">Sign up</button>
+      </form>
+    </div>
+
+  </main>
+</body>
+
+</html>

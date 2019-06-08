@@ -1,0 +1,9 @@
+.page-wrapper {
+  @include container-adaptive();
+  @include horizontal-paddings(30px);
+  @include vertical-paddings(20px);
+  min-width: 320px;
+  overflow: hidden;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
