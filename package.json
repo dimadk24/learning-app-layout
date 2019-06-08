@@ -16,6 +16,7 @@
     "browser-sync": "2.26.x",
     "del": "^4.1.1",
     "editorconfig": "^0.15.3",
+    "gh-pages": "^2.0.1",
     "gulp": "4.0.x",
     "gulp-csso": "^3.0.1",
     "gulp-imagemin": "^6.0.0",
