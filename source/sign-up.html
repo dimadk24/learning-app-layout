@@ -17,9 +17,6 @@
       <span class="page-header__icon">📚</span>
       Learning app
     </h1>
-
-    <!-- dashboard link here -->
-    <!-- student name block here -->
   </header>
 
   <main class="page-main">
@@ -57,15 +54,14 @@
 
           <p class="signup-form__item signup-form__item--group">
             <label for="group">Group number</label>
-            <select class="signup-form__group-select" name="group" id="group">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
+            <input class="signup-form__input" type="text" name="group" id="group">
           </p>
         </div>
 
-        <button class="signup-form__button button" type="submit">Sign up</button>
+        <!-- <div class="signup-form__columns"> -->
+          <button class="signup-form__button button" type="submit">Sign up</button>
+          <p>Already registered? <a href="./sign-in.html">Sign in</a></p>
+        <!-- </div> -->
       </form>
     </div>
 
