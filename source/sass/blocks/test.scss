@@ -1,3 +1,26 @@
+.test-wrapper {
+  @include horizontal-paddings(30px);
+  @include vertical-paddings(30px);
+
+  @media (min-width: $mobile-width) {
+    @include container($mobile-width);
+  }
+
+  @media (min-width: $tablet-width) {
+    @include container($tablet-width - 300px);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container($tablet-width - 300px);
+  }
+
+  min-width: 320px;
+  overflow: hidden;
+  margin-top: 2.5em;
+  margin-bottom: 5em;
+}
+
+
 .test__name {
   display: block;
   margin-bottom: 0.7em;
@@ -12,13 +35,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 60%;
-}
-
-@media (max-width: $tablet-width) {
-  .question {
-    width: 100%;
-  }
 }
 
 .question input {
