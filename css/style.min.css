@@ -380,35 +380,40 @@ body {
           box-shadow: 0 0 10px rgba(49, 53, 63, 0.25); }
 
 .page-header__title {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   position: relative;
+  width: 20%;
   margin-left: 45px;
   text-decoration: none;
   color: #ffffff;
   font-size: 1.1em;
-  font-weight: 400;
+  line-height: 45px;
   text-transform: uppercase;
-  letter-spacing: 0.01em; }
+  letter-spacing: 0.03em; }
 
 .page-header__title::before {
   position: absolute;
   display: inline-block;
   content: "";
-  top: 0;
+  top: 10px;
   left: -40px;
   margin: 0 0.5em;
   width: 22px;
   height: 22px;
   background-image: url("../img/logo.svg"); }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .page-header__title {
     font-size: 0; }
   .page-header__title::before {
     width: 30px;
     height: 30px;
-    top: 10px; } }
+    top: 8px; } }
 
 .nav {
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,20 +421,26 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 10px; }
+
+@media (max-width: 868px) {
+  .nav {
+    width: 140%; } }
 
 .nav__dashboard-link {
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  display: inline-block;
   position: relative;
+  display: inline-block;
   margin-left: 30px;
   padding-left: 3em;
+  line-height: 40px;
   font-size: 0.9em;
   letter-spacing: 0.01em;
   color: #ffffff;
@@ -456,13 +467,16 @@ body {
   position: absolute;
   display: inline-block;
   content: "";
-  top: 8px;
+  top: 10px;
   left: 0.8em;
   background-image: url("../img/icon-home.svg");
   width: 20px;
   height: 20px; }
 
 @media (max-width: 768px) {
+  .nav__dashboard-link {
+    width: 40px;
+    height: 40px; }
   .nav__dashboard-link::before {
     left: 50%;
     -webkit-transform: translate(-50%, 0);
@@ -486,10 +500,6 @@ body {
   -ms-flex-item-align: center;
       align-self: center; }
 
-.nav__student-name {
-  font-size: 1.1em;
-  margin-right: 25px; }
-
 .nav__student::before {
   position: absolute;
   display: inline-block;
@@ -500,15 +510,19 @@ body {
   left: -35px;
   background-image: url("../img/icon-user.svg"); }
 
+.nav__student-name {
+  font-size: 1.1em;
+  margin-right: 30px; }
+
 .nav__student-group::before {
-  padding-right: 0.5em;
   content: "Group: ";
+  padding-right: 0.5em;
   font-size: 0.8em;
   text-transform: uppercase;
   letter-spacing: 0.01em;
   color: rgba(255, 255, 255, 0.75); }
 
-@media (max-width: 570px) {
+@media (max-width: 768px) {
   .nav__student {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
