@@ -13,7 +13,6 @@
 .page-header__title {
   @include list-reset();
   position: relative;
-  width: 20%;
   margin-left: 45px;
   font-size: 1.1em;
   line-height: 45px;
@@ -38,14 +37,23 @@
   background-image: url("../img/logo.svg");
 }
 
-@media (max-width: $tablet-width + 100px) {
+@media (max-width: $tablet-width - 200px) {
   .page-header__title {
-    font-size: 0;
+    position: relative;
+    padding-left: 10px;
+    font-size: 1em;
+    align-self: center;
+  }
+
+  .page-header__title a {
+    display: block;
+    width: 40%;
+    line-height: 130%;
   }
 
   .page-header__title::before {
-    width: 30px;
-    height: 30px;
-    top: 8px;
+    width: 28px;
+    height: 28px;
+    top: 5px;
   }
 }
