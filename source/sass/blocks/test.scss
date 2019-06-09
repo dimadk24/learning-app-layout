@@ -90,6 +90,9 @@ input[type="checkbox"] {
 }
 
 .disabled .question__text,
-.disabled .variant {
+.disabled .variant,
+.disabled input[type="radio"],
+.disabled input[type="checkbox"] {
   color: $disabled-dark;
+  cursor: auto;
 }
