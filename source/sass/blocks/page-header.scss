@@ -1,8 +1,12 @@
 .page-header {
   @include horizontal-paddings(10px);
   @include vertical-paddings(10px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
   background-color: $accent-color;
+  color: $white;
   box-shadow: 0 0 10px $transparent-dark;
 }
 

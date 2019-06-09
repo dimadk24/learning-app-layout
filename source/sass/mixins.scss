@@ -6,7 +6,8 @@
 
 @mixin container($width: 320px) {
   width: $width;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   background-color: $white;
 }
 
