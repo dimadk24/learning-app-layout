@@ -775,6 +775,24 @@ body {
   font-size: 1.1em;
   font-weight: 700; }
 
+.variant {
+  font-size: 1em;
+  line-height: 200%;
+  color: rgba(49, 53, 63, 0.75);
+  cursor: pointer; }
+
+input[type="radio"] {
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  cursor: pointer; }
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  cursor: pointer; }
+
 .test__submit-button {
   padding-left: 1.2em;
   padding-right: 1.2em;
@@ -819,8 +837,9 @@ body {
   .test__score {
     width: 100%; } }
 
-.disabled .question {
-  color: rgba(49, 53, 63, 0.25); }
+.disabled .question__text,
+.disabled .variant {
+  color: rgba(49, 53, 63, 0.5); }
 
 .course a {
   color: #333333;
