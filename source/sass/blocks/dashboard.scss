@@ -32,12 +32,14 @@
 }
 
 .course-item--theme,
-.course-item--test {
+.course-item--test,
+.course-item--lab {
   position: relative;
 }
 
 .course-item--test::before,
-.course-item--theme::before {
+.course-item--theme::before,
+.course-item--lab::before {
   position: absolute;
   display: inline-block;
   content: "";
@@ -57,8 +59,16 @@
   height: 22px;
 }
 
+.course-item--lab::before {
+  background-image: url("../img/icon-comp.svg");
+  width: 20px;
+  height: 20px;
+}
+
+
 .course-item--test .course-item__name,
-.course-item--theme .course-item__name {
+.course-item--theme .course-item__name,
+.course-item--lab .course-item__name {
   padding-left: 2.4em;
 }
 
