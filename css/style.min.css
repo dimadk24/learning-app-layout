@@ -856,10 +856,10 @@ input[type="checkbox"] {
   color: #333333;
   text-decoration: none; }
 
-.course a:hover .course-item__description,
-.course a:focus .course-item__description {
+.course a:hover .course-item__name,
+.course a:focus .course-item__name {
   color: #000000;
-  text-shadow: 0 0 1px rgba(0, 0, 0, 0.1); }
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2); }
 
 .course {
   padding-left: 30px;
@@ -910,15 +910,6 @@ input[type="checkbox"] {
   padding-left: 2.4em; }
 
 .course-item__name {
-  font-size: 1.2em;
-  font-weight: 700; }
-
-.course-item__description {
-  width: 70%;
-  color: rgba(49, 53, 63, 0.75); }
-
-@media (max-width: 768px) {
-  .course-item__description {
-    width: 100%; } }
+  font-size: 1.2em; }
 
 /*# sourceMappingURL=style.min.css.map */
