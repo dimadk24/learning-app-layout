@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* stylelint-disable */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -386,12 +387,14 @@ body {
   position: relative;
   width: 20%;
   margin-left: 45px;
-  text-decoration: none;
-  color: #ffffff;
   font-size: 1.1em;
   line-height: 45px;
   text-transform: uppercase;
   letter-spacing: 0.03em; }
+
+.page-header__title a {
+  text-decoration: none;
+  color: #ffffff; }
 
 .page-header__title::before {
   position: absolute;
@@ -515,7 +518,7 @@ body {
   margin-right: 30px; }
 
 .nav__student-group::before {
-  content: "Group: ";
+  content: "Группа: ";
   padding-right: 0.5em;
   font-size: 0.8em;
   text-transform: uppercase;
@@ -907,11 +910,13 @@ input[type="checkbox"] {
   padding-bottom: 1.3em; }
 
 .course-item--theme,
-.course-item--test {
+.course-item--test,
+.course-item--lab {
   position: relative; }
 
 .course-item--test::before,
-.course-item--theme::before {
+.course-item--theme::before,
+.course-item--lab::before {
   position: absolute;
   display: inline-block;
   content: "";
@@ -928,8 +933,14 @@ input[type="checkbox"] {
   width: 22px;
   height: 22px; }
 
+.course-item--lab::before {
+  background-image: url("../img/icon-comp.svg");
+  width: 20px;
+  height: 20px; }
+
 .course-item--test .course-item__name,
-.course-item--theme .course-item__name {
+.course-item--theme .course-item__name,
+.course-item--lab .course-item__name {
   padding-left: 2.4em; }
 
 .course-item__name {
