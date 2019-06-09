@@ -2,3 +2,78 @@
   color: $text-color;
   text-decoration: none;
 }
+
+.course a:hover .course-item__description,
+.course a:focus .course-item__description {
+  color: $black;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.course {
+  @include horizontal-paddings(30px);
+  @include vertical-paddings(30px);
+  margin-bottom: 3em;
+  background-color: #fafafa;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0, rgba(0, 0, 0, 0.1) 0 1px 1px 0, rgba(0, 0, 0, 0.08) 0 2px 1px -1px;
+}
+
+.course__name {
+  display: inline-block;
+  padding-bottom: 0.5em;
+  margin-bottom: 1.2em;
+  font-size: 1.4em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.course-item {
+  padding-bottom: 1.3em;
+}
+
+.course-item--theme,
+.course-item--test {
+  position: relative;
+}
+
+.course-item--test::before,
+.course-item--theme::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  top: 0;
+  left: 0;
+}
+
+.course-item--test::before {
+  background-image: url("../img/icon-test.svg");
+  width: 24px;
+  height: 24px;
+}
+
+.course-item--theme::before {
+  background-image: url("../img/icon-theme.svg");
+  width: 22px;
+  height: 22px;
+}
+
+.course-item--test .course-item__name,
+.course-item--theme .course-item__name {
+  padding-left: 2.4em;
+}
+
+.course-item__name {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.course-item__description {
+  width: 70%;
+  color: $semi-transparent-dark;
+}
+
+@media (max-width: $tablet-width) {
+  .course-item__description {
+    width: 100%;
+  }
+}
