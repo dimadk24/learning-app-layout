@@ -23,7 +23,7 @@
 
 @mixin container-adaptive() {
   @media (min-width: $mobile-width) {
-    @include container($mobile-width);
+    @include container($mobile-width - 20px);
   }
 
   @media (min-width: $tablet-width) {
@@ -37,7 +37,7 @@
 
 @mixin container-adaptive-small() {
   @media (min-width: $mobile-width) {
-    @include container($mobile-width);
+    @include container($mobile-width - 20px);
   }
 
   @media (min-width: $tablet-width) {

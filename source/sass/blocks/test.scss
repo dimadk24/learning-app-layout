@@ -3,7 +3,7 @@
   @include vertical-paddings(30px);
 
   @media (min-width: $mobile-width) {
-    @include container($mobile-width);
+    @include container($mobile-width - 30px);
   }
 
   @media (min-width: $tablet-width) {
@@ -14,7 +14,7 @@
     @include container($tablet-width - 300px);
   }
 
-  min-width: 320px;
+  min-width: 290px;
   overflow: hidden;
   margin-top: 2.5em;
   margin-bottom: 5em;
