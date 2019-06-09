@@ -385,7 +385,6 @@ body {
   padding: 0;
   list-style: none;
   position: relative;
-  width: 20%;
   margin-left: 45px;
   font-size: 1.1em;
   line-height: 45px;
@@ -407,15 +406,21 @@ body {
   height: 22px;
   background-image: url("../img/logo.svg"); }
 
-@media (max-width: 868px) {
+@media (max-width: 568px) {
   .page-header__title {
-    content: "LO";
-    width: 50%;
-    font-size: 0.7em; }
+    position: relative;
+    padding-left: 10px;
+    font-size: 1em;
+    -ms-flex-item-align: center;
+        align-self: center; }
+  .page-header__title a {
+    display: block;
+    width: 40%;
+    line-height: 130%; }
   .page-header__title::before {
-    width: 30px;
-    height: 30px;
-    top: 8px; } }
+    width: 28px;
+    height: 28px;
+    top: 5px; } }
 
 .nav {
   width: 80%;
@@ -434,9 +439,13 @@ body {
           align-items: center;
   margin-right: 10px; }
 
+@media (max-width: 980px) {
+  .nav {
+    width: 75%; } }
+
 @media (max-width: 868px) {
   .nav {
-    width: 140%; } }
+    width: 65%; } }
 
 .nav__dashboard-link {
   padding-left: 20px;
@@ -527,7 +536,7 @@ body {
   letter-spacing: 0.01em;
   color: rgba(255, 255, 255, 0.75); }
 
-@media (max-width: 768px) {
+@media (max-width: 568px) {
   .nav {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -539,14 +548,17 @@ body {
         -ms-flex-direction: column;
             flex-direction: column; }
   .nav__student::before {
-    top: 10px; } }
+    top: 10px; }
+  .nav__student-name {
+    font-size: 1.1em;
+    margin-right: 10px; } }
 
 .page-wrapper {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
-  min-width: 320px;
+  min-width: 300px;
   overflow: hidden;
   margin-top: 2.5em;
   margin-bottom: 5em; }
