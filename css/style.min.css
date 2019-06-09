@@ -879,10 +879,10 @@ input[type="checkbox"] {
   display: block;
   margin-top: 2em;
   margin-bottom: 0.5em;
-  padding-left: 3em;
   width: 12em;
-  min-width: 250px;
+  min-width: 220px;
   font-size: 1.6em;
+  text-align: center;
   border-radius: 3px;
   background-color: #4caf50;
   color: #ffffff; }
