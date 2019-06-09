@@ -392,6 +392,7 @@ body {
   letter-spacing: 0.03em; }
 
 .page-header__title a {
+  display: block;
   text-decoration: none;
   color: #ffffff; }
 
@@ -409,13 +410,13 @@ body {
 @media (max-width: 568px) {
   .page-header__title {
     position: relative;
+    width: 20%;
     padding-left: 10px;
     font-size: 1em;
     -ms-flex-item-align: center;
         align-self: center; }
   .page-header__title a {
     display: block;
-    width: 40%;
     line-height: 130%; }
   .page-header__title::before {
     width: 28px;
