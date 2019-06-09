@@ -24,6 +24,26 @@
   font-weight: 700;
 }
 
+.variant {
+  font-size: 1em;
+  line-height: 200%;
+  color: $semi-transparent-dark;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  cursor: pointer;
+}
 
 .test__submit-button {
   @include horizontal-paddings(1.2em);
@@ -69,7 +89,7 @@
   }
 }
 
-
-.disabled .question {
-  color: $transparent-dark;
+.disabled .question__text,
+.disabled .variant {
+  color: $disabled-dark;
 }
