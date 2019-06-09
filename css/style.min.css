@@ -746,7 +746,7 @@ body {
 
 .test__name {
   display: block;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.7em;
   font-size: 1.3em;
   font-weight: 700;
   text-transform: uppercase;
@@ -764,7 +764,12 @@ body {
           flex-direction: column;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: flex-start; }
+          justify-content: flex-start;
+  width: 60%; }
+
+@media (max-width: 768px) {
+  .question {
+    width: 100%; } }
 
 .question input {
   margin-right: 0.5em; }
@@ -776,8 +781,9 @@ body {
   font-weight: 700; }
 
 .variant {
+  margin-bottom: 0.6em;
   font-size: 1em;
-  line-height: 200%;
+  line-height: 150%;
   color: rgba(49, 53, 63, 0.75);
   cursor: pointer; }
 
@@ -838,10 +844,12 @@ input[type="checkbox"] {
     width: 100%; } }
 
 .disabled .question__text,
-.disabled .variant,
+.disabled .variant {
+  color: rgba(49, 53, 63, 0.5);
+  cursor: auto; }
+
 .disabled input[type="radio"],
 .disabled input[type="checkbox"] {
-  color: rgba(49, 53, 63, 0.5);
   cursor: auto; }
 
 .course a {
