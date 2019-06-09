@@ -43,7 +43,9 @@
 
 .question__text {
   @include vertical-paddings(8px);
+  margin-bottom: 0.5em;
   font-size: 1.1em;
+  line-height: 140%;
   font-weight: 700;
 }
 
