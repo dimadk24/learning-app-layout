@@ -1,15 +1,25 @@
 .nav {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   margin-right: 10px;
-  align-self: center;
+}
+
+@media (max-width: $tablet-width + 100px) {
+  .nav {
+    width: 140%;
+  }
 }
 
 .nav__dashboard-link {
   @include horizontal-paddings(20px);
-  @include vertical-paddings(8px);
-  display: inline-block;
   position: relative;
+  display: inline-block;
   margin-left: 30px;
   padding-left: 3em;
+  line-height: 40px;
   font-size: 0.9em;
   letter-spacing: 0.01em;
   color: $white;
@@ -24,6 +34,7 @@
   .nav__dashboard-link {
     @include horizontal-paddings(20px);
     font-size: 0;
+    height: 30px;
   }
 }
 
@@ -37,7 +48,7 @@
   position: absolute;
   display: inline-block;
   content: "";
-  top: 8px;
+  top: 10px;
   left: 0.8em;
   background-image: url("../img/icon-home.svg");
   width: 20px;
@@ -45,33 +56,57 @@
 }
 
 @media (max-width: $tablet-width) {
+  .nav__dashboard-link {
+    width: 40px;
+    height: 40px;
+  }
+
   .nav__dashboard-link::before {
     left: 50%;
     transform: translate(-50%, 0);
   }
 }
 
-.nav__student-name {
-  font-size: 1.1em;
-  margin-right: 25px;
+.nav__student {
+  @include list-reset();
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-self: center;
 }
 
-.nav__student-name::before {
+.nav__student::before {
   position: absolute;
   display: inline-block;
   content: "";
+  width: 20px;
+  height: 20px;
   top: 0;
-  left: 0;
+  left: -35px;
   background-image: url("../img/icon-user.svg");
-  width: 24px;
-  height: 24px;
+}
+
+.nav__student-name {
+  font-size: 1.1em;
+  margin-right: 30px;
 }
 
 .nav__student-group::before {
-  padding-right: 0.5em;
   content: "Group: ";
+  padding-right: 0.5em;
   font-size: 0.8em;
   text-transform: uppercase;
   letter-spacing: 0.01em;
   color: $semi-transparent-white;
+}
+
+@media (max-width: $tablet-width) {
+  .nav__student {
+    flex-direction: column;
+  }
+
+  .nav__student::before {
+    top: 10px;
+  }
 }
