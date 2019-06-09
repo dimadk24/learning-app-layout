@@ -1,13 +1,14 @@
 .nav {
-  margin-right: 3em;
+  margin-right: 10px;
   align-self: center;
 }
 
 .nav__dashboard-link {
   @include horizontal-paddings(20px);
   @include vertical-paddings(8px);
+  display: inline-block;
   position: relative;
-  margin-left: 3em;
+  margin-left: 30px;
   padding-left: 3em;
   font-size: 0.9em;
   letter-spacing: 0.01em;
@@ -17,6 +18,13 @@
   text-decoration: none;
   border-radius: 3px;
   transition: all 0.25s ease-out;
+}
+
+@media (max-width: $tablet-width) {
+  .nav__dashboard-link {
+    @include horizontal-paddings(20px);
+    font-size: 0;
+  }
 }
 
 .nav__dashboard-link:hover,
@@ -29,18 +37,41 @@
   position: absolute;
   display: inline-block;
   content: "";
-  top: 5px;
+  top: 8px;
   left: 0.8em;
   background-image: url("../img/icon-home.svg");
   width: 20px;
   height: 20px;
 }
 
+@media (max-width: $tablet-width) {
+  .nav__dashboard-link::before {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
 .nav__student-name {
-  font-size: 1.2em;
-  margin-right: 1.5em;
+  font-size: 1.1em;
+  margin-right: 25px;
+}
+
+.nav__student-name::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  top: 0;
+  left: 0;
+  background-image: url("../img/icon-user.svg");
+  width: 24px;
+  height: 24px;
 }
 
 .nav__student-group::before {
-  content: "group: ";
+  padding-right: 0.5em;
+  content: "Group: ";
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  color: $semi-transparent-white;
 }
