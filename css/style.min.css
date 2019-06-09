@@ -838,8 +838,11 @@ input[type="checkbox"] {
     width: 100%; } }
 
 .disabled .question__text,
-.disabled .variant {
-  color: rgba(49, 53, 63, 0.5); }
+.disabled .variant,
+.disabled input[type="radio"],
+.disabled input[type="checkbox"] {
+  color: rgba(49, 53, 63, 0.5);
+  cursor: auto; }
 
 .course a {
   color: #333333;
