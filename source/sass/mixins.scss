@@ -40,10 +40,10 @@
   }
 
   @media (min-width: $tablet-width) {
-    @include container($tablet-width);
+    @include container($tablet-width - 20px);
   }
 
   @media (min-width: $desktop-width) {
-    @include container($tablet-width);
+    @include container($tablet-width - 20px);
   }
 }
