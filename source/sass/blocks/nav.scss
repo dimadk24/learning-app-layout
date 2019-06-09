@@ -1,3 +1,46 @@
 .nav {
+  margin-right: 3em;
   align-self: center;
+}
+
+.nav__dashboard-link {
+  @include horizontal-paddings(20px);
+  @include vertical-paddings(8px);
+  position: relative;
+  margin-left: 3em;
+  padding-left: 3em;
+  font-size: 0.9em;
+  letter-spacing: 0.01em;
+  color: $white;
+  background-color: $transparent-white;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: all 0.25s ease-out;
+}
+
+.nav__dashboard-link:hover,
+.nav__dashboard-link:focus {
+  color: $semi-transparent-white;
+  background-color: $transparent-dark;
+}
+
+.nav__dashboard-link::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  top: 5px;
+  left: 0.8em;
+  background-image: url("../img/icon-home.svg");
+  width: 20px;
+  height: 20px;
+}
+
+.nav__student-name {
+  font-size: 1.2em;
+  margin-right: 1.5em;
+}
+
+.nav__student-group::before {
+  content: "group: ";
 }
